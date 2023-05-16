@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'EB Garamond', serif;
+        background-color: rgb(122, 161, 232);
+    }   
+</style>
+
+<body>
+    <h1>New Movie</h1>
+
+    <form action="../processAdd" method="post">
+        <fieldset>
+            <label>Title: <input type="text" name="title"/></label>
+			<label>Time: <input name="hour" type="number" min="1" max="10" step="1" value="1"> hrs
+                <input name="minute" type="number" min="0" max="59" step="1" value="0"> min</label><br>
+            <label>Your Rating: <input type="number" min="0" max="5" step=".5" name="stars"> stars</label><br>
+            <label>Your Review:<br><textarea rows="5" cols="80" name="review"></textarea></label>
+        </fieldset>
+
+        <input type="reset">
+        <input type="submit" value="Add Movie" 
+        onclick="return confirm('Are you sure you all the info is correct?')">
+    </form>
+    <hr>
+    <a href="..">HOME PAGE</a>
+
+</body>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'EB Garamond', serif;
+        background-color: rgb(122, 161, 232);
+    }
+
+</style>
+
+<body>
+    <h1>Movie Data</h1>
+
+    <strong>Title: </strong><%- title %><br>
+	<strong>Run Time: </strong><%- hour %> hours, <%- minute %> minutes<br>
+    <strong>Rating: </strong><%- stars %> stars<br>
+    <strong>Review: </strong><br><%- review %><br>
+
+    <br><hr><br>
+    <a href="../add">ADD ANOTHER MOVIE</a>
+    <a href="..">HOME</a>
+</body>
